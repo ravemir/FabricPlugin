@@ -31,10 +31,9 @@ module.exports = {
         // ../../plugins/plugin-id/lib/ios/Crashlytics.framework/run API_KEY SECRET_KEY
         var script = [
             "\"",
-            utilities.getAppName(context),
-            "/Plugins/",
+            "../../plugins/",
             utilities.getPluginId(),
-            "/Crashlytics.framework/run ",
+            "/lib/ios/run ",
             pluginConfig.apiKey,
             " ",
             pluginConfig.apiSecret,
