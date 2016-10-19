@@ -2,16 +2,9 @@
 
 This is a [Cordova](http://cordova.apache.org/) plugin for [Fabric.io](https://www.fabric.io)'s Crashlytics and Answers services.
 
-It requires Cordova 3.x or newer (tested on 6.2.0) and has APIs for iOS and Android.
+It requires Cordova 3.x or newer (tested on 5.4.0) and has APIs for iOS and Android.
 
-The iOS version is bundles and  located in `lib/ios`:
-+ Fabric            1.6.7 
-+ Crashlytics       3.7.0 
-
-The Android version will be downloaded automatically at build time.
-+ Fabric            1.3.10 
-+ Crashlytics       2.5.5
-
+The iOS version uses Fabric SDK 1.6.9 and Crashlytics SDK 3.8.2 framework bundles which are located in `lib/ios`.
 
 The Android version uses Gradle to get the Fabric SDK (`io.fabric.tools:gradle:1.+`) and the Crashlytics SDK (`com.crashlytics.sdk.android:crashlytics:2.5.5`) from Maven repositories when the plugin is added.
 
