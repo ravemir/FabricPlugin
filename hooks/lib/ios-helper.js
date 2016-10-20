@@ -27,7 +27,7 @@ module.exports = {
         var xcodeProject = xcode.project(xcodeProjectPath);
         xcodeProject.parseSync();
 
-        xcodeProj.updateBuildProperty('ENABLE_BITCODE', 'NO');
+        xcodeProject.updateBuildProperty('ENABLE_BITCODE', 'NO');
 
         // Build the body of the script to be executed during the build phase.
         // ../../plugins/plugin-id/lib/ios/Crashlytics.framework/run API_KEY SECRET_KEY
