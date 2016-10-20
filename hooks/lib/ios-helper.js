@@ -29,6 +29,7 @@ module.exports = {
 
         xcodeProject.updateBuildProperty('ENABLE_BITCODE', 'NO');
         xcodeProject.updateBuildProperty('ENABLE_TESTABILITY', 'NO');
+        xcodeProject.updateBuildProperty('DEBUG_INFORMATION_FORMAT', 'dwarf-with-dsym');
 
         // Build the body of the script to be executed during the build phase.
         // ../../plugins/plugin-id/lib/ios/Crashlytics.framework/run API_KEY SECRET_KEY
