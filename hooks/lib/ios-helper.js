@@ -33,6 +33,7 @@ module.exports = {
 
         // Build the body of the script to be executed during the build phase.
         // ../../plugins/plugin-id/lib/ios/Crashlytics.framework/run API_KEY SECRET_KEY
+        console.log("appname: "+utilities.getAppName(context)+"\nReplaced: "+utilities.getAppName(context).replace(/ /g,"\\ ")+"\n");
         var script = [
             "\"",
             "./",
@@ -45,6 +46,8 @@ module.exports = {
             pluginConfig.apiSecret,
             "\""
         ].join("");
+        
+        console.log("script: "+script+"\n");
 
         // Generate a unique ID for our new build phase.
         var id = xcodeProject.generateUuid();
