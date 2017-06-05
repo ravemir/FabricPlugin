@@ -36,7 +36,7 @@ module.exports = {
         var script = [
             "\"",
             "./",
-            utilities.getAppName(context).replace(/ /g,"\ "),
+            utilities.getAppName(context).replace(/ /g,"\\ "),
             "/Plugins/",
             utilities.getPluginId(),
             "/Crashlytics.framework/run ",
