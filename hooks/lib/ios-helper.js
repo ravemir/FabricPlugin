@@ -35,6 +35,7 @@ module.exports = {
         // ../../plugins/plugin-id/lib/ios/Crashlytics.framework/run API_KEY SECRET_KEY
         var script = [
             "\"",
+            "./"
             utilities.getAppName(context).replace(/ /g,"\ "),
             "/Plugins/",
             utilities.getPluginId(),
